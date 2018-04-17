@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Title</title>
+    {% load static %}
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="{% static 'blogs/css/style.css' %}">
+</head>
+<body style="text-align: center;">
+    <p>Random Word attempt #{{ count }}</p>
+    <h1 style="border: 1px solid black; margin: auto; height: 40px; width: 500px; text-align: center;"> {{ random_string }}</h1>
+    <a href="/"><button type="submit" style="margin: auto;">Generate</button></a>
+    <a href="/delete"><button type="submit">Reset</button></a>
+</body>
+</html>
